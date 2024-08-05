@@ -1,0 +1,6 @@
+streamlit
+tushare
+pandas
+scikit-learn
+plotly
+
