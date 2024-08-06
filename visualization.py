@@ -32,8 +32,7 @@ def plot_data(data, prediction, stock, recent_data=None):
 
     # 绘制最近几天的价格预测图
     if len(prediction) >= 7:
-        recent_prediction = prediction[-7:]
-        recent_dates = future_dates[-7:]
+        recent_prediction = prediction[:7]
         fig_recent = go.Figure()
 
         fig_recent.add_trace(go.Scatter(x=recent_future_dates, y=recent_prediction, mode='lines', name='最近几天预测价格', line=dict(color='orange')))
